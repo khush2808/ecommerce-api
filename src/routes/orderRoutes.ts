@@ -70,6 +70,15 @@ router.get('/product/:productId/users', async (req, res) => {
     res.status(500).json({ message: 'Error fetching users for product', error });
   }
 });
+router.get('/', async (req, res) => {
+  try {
+    
+    res.end("Hello World");
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching user', error });
+  }
+});
+
 
 export default router;
 
