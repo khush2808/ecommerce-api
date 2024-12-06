@@ -38,7 +38,7 @@ router.get('/:id', async (req, res) => {
 router.get('/', async (req, res) => {
   try {
     
-    res.json("gello");
+    res.end("Hello World");
   } catch (error) {
     res.status(500).json({ message: 'Error fetching user', error });
   }
