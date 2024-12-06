@@ -6,14 +6,19 @@
 	<title>Assignment</title>
 </head>
 <body>
-	Routes are available in /api as follows:
-	Create/Update/Get user
-Create/Update/Get product
-Create/Update/Get orders
-Get the order details for orders placed in the last 7 days.
-Get orders of a specific user
-Get users who bought a specific product
-Get total stock quantity for all products combined
+
+	<div>
+		<ul>
+			<li><a href="/api/users">User</a></li>
+			<li><a href="/api/products">Product</a></li>
+			<li><a href="/api/orders">Order</a></li>
+			<li><a href="/api/orders/recent/week">Order Details for last 7 days</a></li>
+			<li><a href="/api/order/user/1">Orders of a specific user</a></li>
+			<li><a href="/api/product/1">Users who bought a specific product</a></li>
+			<li><a href="/api/product/stock/total">Total stock quantity for all products combined</a></li>
+		</ul>
+	</div>
+	
 
 </body>
 </html>
